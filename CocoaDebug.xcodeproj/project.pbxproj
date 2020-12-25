@@ -249,12 +249,6 @@
 		3826DC3224EE5BF5003DE040 /* _NetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3826DAC524EE5BF5003DE040 /* _NetworkHelper.m */; };
 		3826DC3324EE5BF5003DE040 /* NetworkDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3826DAC624EE5BF5003DE040 /* NetworkDetailModel.swift */; };
 		3826DC3424EE5BF5003DE040 /* _HttpDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3826DAC724EE5BF5003DE040 /* _HttpDatasource.m */; };
-		3826DC3524EE5BF5003DE040 /* _CacheStoragePolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 3826DAC924EE5BF5003DE040 /* _CacheStoragePolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3826DC3624EE5BF5003DE040 /* _CanonicalRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 3826DACA24EE5BF5003DE040 /* _CanonicalRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3826DC3724EE5BF5003DE040 /* _QNSURLSessionDemux.m in Sources */ = {isa = PBXBuildFile; fileRef = 3826DACB24EE5BF5003DE040 /* _QNSURLSessionDemux.m */; };
-		3826DC3924EE5BF5003DE040 /* _CacheStoragePolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3826DACD24EE5BF5003DE040 /* _CacheStoragePolicy.m */; };
-		3826DC3A24EE5BF5003DE040 /* _QNSURLSessionDemux.h in Headers */ = {isa = PBXBuildFile; fileRef = 3826DACE24EE5BF5003DE040 /* _QNSURLSessionDemux.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3826DC3B24EE5BF5003DE040 /* _CanonicalRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3826DACF24EE5BF5003DE040 /* _CanonicalRequest.m */; };
 		3826DC3D24EE5BF5003DE040 /* _LogHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3826DAD224EE5BF5003DE040 /* _LogHelper.swift */; };
 		3826DC3E24EE5BF5003DE040 /* _OCLogModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3826DAD324EE5BF5003DE040 /* _OCLogModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3826DC3F24EE5BF5003DE040 /* _NSLogHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 3826DAD424EE5BF5003DE040 /* _NSLogHook.m */; };
@@ -672,12 +666,6 @@
 		3826DAC524EE5BF5003DE040 /* _NetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _NetworkHelper.m; sourceTree = "<group>"; };
 		3826DAC624EE5BF5003DE040 /* NetworkDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDetailModel.swift; sourceTree = "<group>"; };
 		3826DAC724EE5BF5003DE040 /* _HttpDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _HttpDatasource.m; sourceTree = "<group>"; };
-		3826DAC924EE5BF5003DE040 /* _CacheStoragePolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CacheStoragePolicy.h; sourceTree = "<group>"; };
-		3826DACA24EE5BF5003DE040 /* _CanonicalRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CanonicalRequest.h; sourceTree = "<group>"; };
-		3826DACB24EE5BF5003DE040 /* _QNSURLSessionDemux.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _QNSURLSessionDemux.m; sourceTree = "<group>"; };
-		3826DACD24EE5BF5003DE040 /* _CacheStoragePolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _CacheStoragePolicy.m; sourceTree = "<group>"; };
-		3826DACE24EE5BF5003DE040 /* _QNSURLSessionDemux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _QNSURLSessionDemux.h; sourceTree = "<group>"; };
-		3826DACF24EE5BF5003DE040 /* _CanonicalRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _CanonicalRequest.m; sourceTree = "<group>"; };
 		3826DAD224EE5BF5003DE040 /* _LogHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _LogHelper.swift; sourceTree = "<group>"; };
 		3826DAD324EE5BF5003DE040 /* _OCLogModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _OCLogModel.h; sourceTree = "<group>"; };
 		3826DAD424EE5BF5003DE040 /* _NSLogHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _NSLogHook.m; sourceTree = "<group>"; };
@@ -1216,12 +1204,6 @@
 			children = (
 				04042E5925023D610004EB2D /* _HTTPDelegateProxy.h */,
 				04042E5A25023D610004EB2D /* _HTTPDelegateProxy.m */,
-				3826DAC924EE5BF5003DE040 /* _CacheStoragePolicy.h */,
-				3826DACA24EE5BF5003DE040 /* _CanonicalRequest.h */,
-				3826DACB24EE5BF5003DE040 /* _QNSURLSessionDemux.m */,
-				3826DACD24EE5BF5003DE040 /* _CacheStoragePolicy.m */,
-				3826DACE24EE5BF5003DE040 /* _QNSURLSessionDemux.h */,
-				3826DACF24EE5BF5003DE040 /* _CanonicalRequest.m */,
 			);
 			path = CustomHTTPProtocol;
 			sourceTree = "<group>";
@@ -1558,12 +1540,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3826DB7024EE5BF5003DE040 /* NSObject+_LeaksFinder.h in Headers */,
-				3826DC3624EE5BF5003DE040 /* _CanonicalRequest.h in Headers */,
 				3826DB5D24EE5BF5003DE040 /* NSArray+_LeaksFinder.h in Headers */,
 				3826DCA924EE5BF5003DE040 /* _GPBDictionary.h in Headers */,
 				3826DC7B24EE5BF5003DE040 /* _GPBUnknownFieldSet_PackagePrivate.h in Headers */,
 				3826DB6024EE5BF5003DE040 /* NSDictionary+_LeaksFinder.h in Headers */,
-				3826DC3A24EE5BF5003DE040 /* _QNSURLSessionDemux.h in Headers */,
 				3826DC8B24EE5BF5003DE040 /* _GPBBootstrap.h in Headers */,
 				3826DC7324EE5BF5003DE040 /* _GPBProtocolBuffers_RuntimeSupport.h in Headers */,
 				3826DC4B24EE5BF5003DE040 /* _OCLogStoreManager.h in Headers */,
@@ -1572,7 +1552,6 @@
 				3826DC8E24EE5BF5003DE040 /* _GPBArray_PackagePrivate.h in Headers */,
 				3826DC8924EE5BF5003DE040 /* _GPBCodedOutputStream_PackagePrivate.h in Headers */,
 				3826DC7124EE5BF5003DE040 /* _GPBWireFormat.h in Headers */,
-				3826DC3524EE5BF5003DE040 /* _CacheStoragePolicy.h in Headers */,
 				3826DC6C24EE5BF5003DE040 /* _GPBProtocolBuffers.h in Headers */,
 				3826DC4024EE5BF5003DE040 /* _OCLogHelper.h in Headers */,
 				3826DC4324EE5BF5003DE040 /* _ObjcLog.h in Headers */,
@@ -1943,7 +1922,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3826DC3924EE5BF5003DE040 /* _CacheStoragePolicy.m in Sources */,
 				3826DE4924EE7B45003DE040 /* FBAssociationManager.mm in Sources */,
 				3826DD2424EE5FD5003DE040 /* _SandboxerHelper.m in Sources */,
 				3826DC7024EE5BF5003DE040 /* _Any.pbobjc.m in Sources */,
@@ -2003,7 +1981,6 @@
 				3826DB5524EE5BF5003DE040 /* _DebugMonitor.m in Sources */,
 				3826DC9A24EE5BF5003DE040 /* _GPBCodedInputStream.m in Sources */,
 				3826DB6824EE5BF5003DE040 /* UIViewController+_LeaksFinder.m in Sources */,
-				3826DC3B24EE5BF5003DE040 /* _CanonicalRequest.m in Sources */,
 				3826DC6624EE5BF5003DE040 /* CocoaDebugWindow.swift in Sources */,
 				3826DE6524EE7B45003DE040 /* FBObjectiveCGraphElement.mm in Sources */,
 				3826DE7124EE7B45003DE040 /* FBRetainCycleUtils.m in Sources */,
@@ -2030,7 +2007,6 @@
 				3826DE4A24EE7B45003DE040 /* FBStandardGraphEdgeFilters.mm in Sources */,
 				3826DB4524EE5BF5003DE040 /* CocoaDebug.swift in Sources */,
 				3826DC3424EE5BF5003DE040 /* _HttpDatasource.m in Sources */,
-				3826DC3724EE5BF5003DE040 /* _QNSURLSessionDemux.m in Sources */,
 				3826DB5424EE5BF5003DE040 /* CrashCell.swift in Sources */,
 				3826DC2A24EE5BF5003DE040 /* _HttpModel.m in Sources */,
 				3826DD2524EE5FD5003DE040 /* _ImageController.m in Sources */,

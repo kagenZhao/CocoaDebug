@@ -377,18 +377,16 @@ NSURLConnectionDownloadDelegate>
         }
         NSDate *startDate = [NSDate date];
         NSData *originalReturnValue = nil;
-        NSURLResponse * __autoreleasing *fixResponse = response;
-        NSError * __autoreleasing *fixError = error;
-        if (response == nil) {
-            NSURLResponse  * __autoreleasing tempResponse = nil;
-            fixResponse = &tempResponse;
+        NSURLResponse *fixResponse = nil;
+        NSError *fixError = nil;
+        originalReturnValue = originalURLConnectionSyncConstructor(__self, sel, request, &fixResponse, &fixError);
+        if (response != nil) {
+            *response = fixResponse;
         }
-        if (error == nil) {
-            NSError * __autoreleasing tempError = nil;
-            fixError = &tempError;
+        if (error != nil && fixError != nil) {
+            *error = fixError;
         }
-        originalReturnValue = originalURLConnectionSyncConstructor(__self, sel, request, fixResponse, fixError);
-        [self recordHTTPRequest:request response:*fixResponse receiveData:originalReturnValue startDate:startDate error:*fixError];
+        [self recordHTTPRequest:request response:fixResponse receiveData:originalReturnValue startDate:startDate error:fixError];
         return originalReturnValue;
     };
     originalURLConnectionSyncConstructor = (URLConnectionSyncConstructor *)replaceMethod(sel, imp_implementationWithBlock(replacedURLConnectionSyncConstructor), [NSURLConnection class], YES);
