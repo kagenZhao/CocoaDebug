@@ -42,27 +42,33 @@ class LogCell: UITableViewCell {
 }
 
 
-class CustomTextView : UITextView {
+class CustomTextView : UITextView, UITextViewDelegate {
     
-    required init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)!
-        self.inputView = UIView.init(frame: CGRect(x: 0, y: 0, width: 1, height: 1))
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.inputView = UIView()
+        self.inputAccessoryView = UIView()
+        self.delegate = self
+        self.isSelectable = true
+    }
+    
+    override var canBecomeFirstResponder: Bool {
+        return true
+    }
+    
+    @available(iOS 2.0, *)
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        return false
     }
     
     override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
-        if action == #selector(selectAll) {
-            if let range = selectedTextRange, range.start == beginningOfDocument, range.end == endOfDocument {
-                return false
-            }
-            return !text.isEmpty
-        }
-        else if action == #selector(paste(_:)) {
+        switch action {
+        case #selector(select(_:)),
+             #selector(copy(_:)),
+             #selector(selectAll(_:)):
+            return super.canPerformAction(action, withSender: sender)
+        default:
             return false
         }
-        else if action == #selector(cut(_:)) {
-            return false
-        }
-        
-        return super.canPerformAction(action, withSender: sender)
     }
 }
