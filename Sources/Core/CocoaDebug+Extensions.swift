@@ -310,9 +310,9 @@ extension CocoaDebug {
         
         CocoaDebugSettings.shared.isRunning = true
         
-        //        let enableWKWebViewMonitoring = UserDefaults.standard.bool(forKey: "enableWKWebViewMonitoring_CocoaDebug")
-        //        let enableCrashRecording = UserDefaults.standard.bool(forKey: "enableCrashRecording_CocoaDebug")
-        //        let enableRNMonitoring = UserDefaults.standard.bool(forKey: "enableRNMonitoring_CocoaDebug")
+        _URLSessionDelegateProxy.startNetworkMonitoring()
+        _URLConnectionDelegateProxy.startNetworkMonitoring()
+        _NSLogHook.startLogMonitoring()
         
         if serverURL == nil {
             CocoaDebugSettings.shared.serverURL = ""
@@ -357,9 +357,6 @@ extension CocoaDebug {
         CocoaDebugSettings.shared.logMaxCount = CocoaDebug.logMaxCount
         CocoaDebugSettings.shared.protobufTransferMap = protobufTransferMap
         CocoaDebugSettings.shared.additionalViewController = additionalViewController
-        //        CocoaDebugSettings.shared.enableCrashRecording = enableCrashRecording
-        //        CocoaDebugSettings.shared.enableWKWebViewMonitoring = enableWKWebViewMonitoring
-        //        CocoaDebugSettings.shared.enableRNMonitoring = enableRNMonitoring
         
         var _ = _OCLogStoreManager.shared()
         CocoaDebugSettings.shared.responseShake = true

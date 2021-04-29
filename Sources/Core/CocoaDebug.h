@@ -19,6 +19,7 @@
 #import "_HttpModel.h"
 #import "_OCLogModel.h"
 #import "_OCLogHelper.h"
+#import "_NSLogHook.h"
 #import "_NetworkHelper.h"
 #import "_HttpDatasource.h"
 #import "_ImageResources.h"

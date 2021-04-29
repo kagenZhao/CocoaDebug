@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04042E5B25023D610004EB2D /* _HTTPDelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 04042E5925023D610004EB2D /* _HTTPDelegateProxy.h */; };
-		04042E5C25023D610004EB2D /* _HTTPDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04042E5A25023D610004EB2D /* _HTTPDelegateProxy.m */; };
 		38164FCF24EFE2B800C54BCC /* _AutoLaunch.m in Sources */ = {isa = PBXBuildFile; fileRef = 38164FCE24EFE2B800C54BCC /* _AutoLaunch.m */; };
 		3823D00F256664F60014A224 /* CocoaDebugDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3823D00D256664F60014A224 /* CocoaDebugDeviceInfo.m */; };
 		3823D010256664F60014A224 /* CocoaDebugDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 3823D00E256664F60014A224 /* CocoaDebugDeviceInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -324,13 +322,15 @@
 		3826DE7924EE7CDE003DE040 /* CocoaDebugTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3826DE7824EE7CDE003DE040 /* CocoaDebugTests.m */; };
 		3826DE7B24EE7CDE003DE040 /* CocoaDebug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 380965722414E04F00382668 /* CocoaDebug.framework */; platformFilter = ios; };
 		3826DEA824EE854E003DE040 /* copy_and_codesign.sh in Resources */ = {isa = PBXBuildFile; fileRef = 3826DEA724EE854E003DE040 /* copy_and_codesign.sh */; };
-		3828BA29259E223B00ABF650 /* FPSCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3828BA26259E223B00ABF650 /* FPSCounter.swift */; };
 		3828BA2A259E223B00ABF650 /* _DebugConsoleLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3828BA27259E223B00ABF650 /* _DebugConsoleLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3828BA2B259E223B00ABF650 /* _DebugConsoleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3828BA28259E223B00ABF650 /* _DebugConsoleLabel.m */; };
 		3828BA33259E234C00ABF650 /* FpsBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3828BA32259E234C00ABF650 /* FpsBubble.swift */; };
 		385945EE256D07D400ADA065 /* _SwiftLogHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385945ED256D07D400ADA065 /* _SwiftLogHelper.swift */; };
 		3882D68225676EA200379E0C /* _fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 3882D68025676EA200379E0C /* _fishhook.c */; };
 		3882D68325676EA200379E0C /* _fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 3882D68125676EA200379E0C /* _fishhook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0414062263A85CA00648C6F /* _HTTPDelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C0414060263A85CA00648C6F /* _HTTPDelegateProxy.h */; };
+		C0414063263A85CA00648C6F /* _HTTPDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0414061263A85CA00648C6F /* _HTTPDelegateProxy.m */; };
+		C0414064263A87D700648C6F /* FPSCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3828BA26259E223B00ABF650 /* FPSCounter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -344,8 +344,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04042E5925023D610004EB2D /* _HTTPDelegateProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _HTTPDelegateProxy.h; sourceTree = "<group>"; };
-		04042E5A25023D610004EB2D /* _HTTPDelegateProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _HTTPDelegateProxy.m; sourceTree = "<group>"; };
 		380965722414E04F00382668 /* CocoaDebug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaDebug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38164FCE24EFE2B800C54BCC /* _AutoLaunch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _AutoLaunch.m; sourceTree = "<group>"; };
 		3823D00D256664F60014A224 /* CocoaDebugDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaDebugDeviceInfo.m; sourceTree = "<group>"; };
@@ -670,6 +668,8 @@
 		385945ED256D07D400ADA065 /* _SwiftLogHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _SwiftLogHelper.swift; sourceTree = "<group>"; };
 		3882D68025676EA200379E0C /* _fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = _fishhook.c; sourceTree = "<group>"; };
 		3882D68125676EA200379E0C /* _fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _fishhook.h; sourceTree = "<group>"; };
+		C0414060263A85CA00648C6F /* _HTTPDelegateProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _HTTPDelegateProxy.h; sourceTree = "<group>"; };
+		C0414061263A85CA00648C6F /* _HTTPDelegateProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _HTTPDelegateProxy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -721,13 +721,13 @@
 		3826D9CD24EE5BF4003DE040 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				C041405F263A85CA00648C6F /* HTTPDelegateProxy */,
 				3828BA25259E223B00ABF650 /* Monitor */,
 				3882D67F25676EA200379E0C /* fishhook */,
 				3826D9CE24EE5BF4003DE040 /* Core */,
 				3826D9D424EE5BF4003DE040 /* App */,
 				3826DA0824EE5BF4003DE040 /* Resources */,
 				3826DABB24EE5BF5003DE040 /* Network */,
-				3826DAC824EE5BF5003DE040 /* CustomHTTPProtocol */,
 				3826DAD124EE5BF5003DE040 /* Logs */,
 				3826DAE224EE5BF5003DE040 /* Sandbox */,
 				3826DAF424EE5BF5003DE040 /* Swizzling */,
@@ -986,15 +986,6 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		3826DAC824EE5BF5003DE040 /* CustomHTTPProtocol */ = {
-			isa = PBXGroup;
-			children = (
-				04042E5925023D610004EB2D /* _HTTPDelegateProxy.h */,
-				04042E5A25023D610004EB2D /* _HTTPDelegateProxy.m */,
-			);
-			path = CustomHTTPProtocol;
-			sourceTree = "<group>";
-		};
 		3826DAD124EE5BF5003DE040 /* Logs */ = {
 			isa = PBXGroup;
 			children = (
@@ -1175,6 +1166,15 @@
 			path = fishhook;
 			sourceTree = "<group>";
 		};
+		C041405F263A85CA00648C6F /* HTTPDelegateProxy */ = {
+			isa = PBXGroup;
+			children = (
+				C0414060263A85CA00648C6F /* _HTTPDelegateProxy.h */,
+				C0414061263A85CA00648C6F /* _HTTPDelegateProxy.m */,
+			);
+			path = HTTPDelegateProxy;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1188,6 +1188,7 @@
 				3826DC7324EE5BF5003DE040 /* _GPBProtocolBuffers_RuntimeSupport.h in Headers */,
 				3826DC4B24EE5BF5003DE040 /* _OCLogStoreManager.h in Headers */,
 				3826DC7224EE5BF5003DE040 /* _GPBArray.h in Headers */,
+				C0414062263A85CA00648C6F /* _HTTPDelegateProxy.h in Headers */,
 				3826DC8E24EE5BF5003DE040 /* _GPBArray_PackagePrivate.h in Headers */,
 				3826DC8924EE5BF5003DE040 /* _GPBCodedOutputStream_PackagePrivate.h in Headers */,
 				3826DC7124EE5BF5003DE040 /* _GPBWireFormat.h in Headers */,
@@ -1224,7 +1225,6 @@
 				3826DC6824EE5BF5003DE040 /* NSObject+CocoaDebug.h in Headers */,
 				3826DC8424EE5BF5003DE040 /* _FieldMask.pbobjc.h in Headers */,
 				3826DC2B24EE5BF5003DE040 /* _NetworkHelper.h in Headers */,
-				04042E5B25023D610004EB2D /* _HTTPDelegateProxy.h in Headers */,
 				3826DC9724EE5BF5003DE040 /* _GPBExtensionInternals.h in Headers */,
 				3826DCA524EE5BF5003DE040 /* _GPBUnknownFieldSet.h in Headers */,
 				3826DC3024EE5BF5003DE040 /* _HttpModel.h in Headers */,
@@ -1534,6 +1534,7 @@
 				385945EE256D07D400ADA065 /* _SwiftLogHelper.swift in Sources */,
 				3826DC4124EE5BF5003DE040 /* _OCLoggerFormat.m in Sources */,
 				3826DC6E24EE5BF5003DE040 /* _GPBExtensionRegistry.m in Sources */,
+				C0414063263A85CA00648C6F /* _HTTPDelegateProxy.m in Sources */,
 				3826DC6A24EE5BF5003DE040 /* NSObject+CocoaDebug.m in Sources */,
 				3826DB4B24EE5BF5003DE040 /* CrashStoreManager.swift in Sources */,
 				3823D00F256664F60014A224 /* CocoaDebugDeviceInfo.m in Sources */,
@@ -1550,6 +1551,7 @@
 				3826DC4624EE5BF5003DE040 /* _OCLogModel.m in Sources */,
 				3826DD3124EE5FD5003DE040 /* _FileTableViewCell.m in Sources */,
 				3826DC9E24EE5BF5003DE040 /* _GPBCodedOutputStream.m in Sources */,
+				C0414064263A87D700648C6F /* FPSCounter.swift in Sources */,
 				3828BA2B259E223B00ABF650 /* _DebugConsoleLabel.m in Sources */,
 				3826DC8C24EE5BF5003DE040 /* _GPBWireFormat.m in Sources */,
 				3826DB5124EE5BF5003DE040 /* CrashLogger.swift in Sources */,
@@ -1591,7 +1593,6 @@
 				3826DC6924EE5BF5003DE040 /* _GPBMessage+CocoaDebug.m in Sources */,
 				3826DD3024EE5FD5003DE040 /* _ImageResources.m in Sources */,
 				3826DC6F24EE5BF5003DE040 /* _Timestamp.pbobjc.m in Sources */,
-				04042E5C25023D610004EB2D /* _HTTPDelegateProxy.m in Sources */,
 				3826DC7924EE5BF5003DE040 /* _GPBExtensionInternals.m in Sources */,
 				3826DC2924EE5BF5003DE040 /* JsonViewController.swift in Sources */,
 				3826DB4E24EE5BF5003DE040 /* IgnoredURLsViewController.swift in Sources */,

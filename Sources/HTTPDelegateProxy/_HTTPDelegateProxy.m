@@ -77,7 +77,7 @@ NSURLConnectionDownloadDelegate>
 
 @implementation _URLSessionDelegateProxy
 
-+ (void)load {
++ (void)startNetworkMonitoring {
     if (![[NSUserDefaults standardUserDefaults] boolForKey:@"disableNetworkMonitoring_CocoaDebug"]) {
         static dispatch_once_t onceToken;
         dispatch_once(&onceToken, ^{
@@ -302,7 +302,7 @@ NSURLConnectionDownloadDelegate>
     return self;
 }
 
-+ (void)load {
++ (void)startNetworkMonitoring {
     if (![[NSUserDefaults standardUserDefaults] boolForKey:@"disableNetworkMonitoring_CocoaDebug"]) {
         static dispatch_once_t onceToken;
         dispatch_once(&onceToken, ^{
@@ -554,7 +554,7 @@ NSURLConnectionDownloadDelegate>
     }
 }
 
-//处理500,404等错误
+//Handling errors 404...
 + (_HttpModel *)handleError:(NSError *)error model:(_HttpModel *)model {
     if (!error) {
         //https://httpcodes.co/status/

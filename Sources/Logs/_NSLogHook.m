@@ -49,7 +49,7 @@ void cocoadebug_nslog(NSString *format, ...)
 }
 
 #pragma mark - load
-+ (void)load
++ (void)startLogMonitoring
 {
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"enableLogMonitoring_CocoaDebug"]) {
         static dispatch_once_t onceToken;

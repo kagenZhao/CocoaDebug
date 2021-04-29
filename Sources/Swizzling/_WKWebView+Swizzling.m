@@ -18,7 +18,7 @@
 @implementation WKWebView (_Swizzling)
 
 #pragma mark - life
-+ (void)load {
++ (void)startWKWebViewMonitoring {
     
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"enableWKWebViewMonitoring_CocoaDebug"]) {
         

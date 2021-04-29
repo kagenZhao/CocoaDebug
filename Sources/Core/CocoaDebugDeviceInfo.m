@@ -60,6 +60,10 @@
     struct utsname systemInfo;
     uname(&systemInfo);
     NSString *deviceString = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
+    return [self mapDevice:deviceString];
+}
+
+- (NSString *)mapDevice: (NSString *)deviceString {
     //iPhone
     if ([deviceString isEqualToString:@"iPhone1,1"])    return @"iPhone";
     if ([deviceString isEqualToString:@"iPhone1,2"])    return @"iPhone 3G";
@@ -184,8 +188,15 @@
     if ([deviceString isEqualToString:@"iPad11,2"])     return @"iPad mini (5th generation)";
     
     //Simulator
-    if ([deviceString isEqualToString:@"i386"])         return @"Simulator";
-    if ([deviceString isEqualToString:@"x86_64"])       return @"Simulator";
+    if ([deviceString isEqualToString:@"i386"] ||
+        [deviceString isEqualToString:@"x86_64"]) {
+        NSProcessInfo *processInfo = [NSProcessInfo processInfo];
+        NSString *simulatorIdentifier = processInfo.environment[@"SIMULATOR_MODEL_IDENTIFIER"];
+        if (!simulatorIdentifier || [simulatorIdentifier isEqualToString:@""]) {
+            simulatorIdentifier = @"iOS";
+        }
+        return [NSString stringWithFormat:@"Simulator(%@)", [self mapDevice:simulatorIdentifier]];
+    }
     
     //iWatch
     if ([deviceString isEqualToString:@"Watch1,1"])       return @"Apple Watch (1st generation)";
@@ -215,7 +226,7 @@
     if ([deviceString isEqualToString:@"Watch6,3"])       return @"Apple Watch Series 6";
     if ([deviceString isEqualToString:@"Watch6,4"])       return @"Apple Watch Series 6";
     
-    return @"unknow";
+    return deviceString;
 }
 
 - (NSString *)localizedModel {

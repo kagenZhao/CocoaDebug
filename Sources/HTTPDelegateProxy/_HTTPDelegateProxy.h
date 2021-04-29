@@ -10,7 +10,9 @@
 @end
 
 @interface _URLSessionDelegateProxy : _HTTPDelegateProxy
++ (void)startNetworkMonitoring;
 @end
 
 @interface _URLConnectionDelegateProxy : _HTTPDelegateProxy
++ (void)startNetworkMonitoring;
 @end
